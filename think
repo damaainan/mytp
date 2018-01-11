@@ -15,6 +15,9 @@ namespace think;
 // 加载基础文件
 require __DIR__ . '/thinkphp/base.php';
 
+// 修改项目
+// 将 build.php 文件放入相应的目录 执行 php think build 即可生成
+
 // 执行应用
-Container::get('app', [__DIR__ . '/application/'])->initialize();
+Container::get('app', [__DIR__ . '/apps/'])->initialize();
 Console::init();
