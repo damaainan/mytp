@@ -152,9 +152,22 @@ class Build
                 // 生成相关MVC文件
                 foreach ($file as $val) {
                     $val      = trim($val);
-                    $filename = $modulePath . $path . DIRECTORY_SEPARATOR . $val . ($suffix ? ucfirst($path) : '') . '.php';
-                    $space    = $namespace . '\\' . ($module ? $module . '\\' : '') . $path;
-                    $class    = $val . ($suffix ? ucfirst($path) : '');
+                    
+                    // 创建多层级控制器  修改部分
+                    $names = explode("/", $val);
+                    if(count($names)==2){ // 新增代码
+                        $realnpath = $path . "\\" . ucfirst($names[0]);
+                        $realpath = $path . "/" . ucfirst($names[0]);
+                        $realval = $names[1];
+                        $filename = $modulePath . $realpath . DIRECTORY_SEPARATOR . $realval . ($suffix ? ucfirst($realpath) : '') . '.php';
+                        $space    = $namespace . '\\' . ($module ? $module . '\\' : '') . $realnpath;
+                        $class    = $realval . ($suffix ? ucfirst($realpath) : '');
+                    }else{ // 源代码 
+                        $filename = $modulePath . $path . DIRECTORY_SEPARATOR . $val . ($suffix ? ucfirst($path) : '') . '.php';
+                        $space    = $namespace . '\\' . ($module ? $module . '\\' : '') . $path;
+                        $class    = $val . ($suffix ? ucfirst($path) : '');
+                    }
+
                     switch ($path) {
                         case 'controller': // 控制器
                             $content = "<?php\nnamespace {$space};\n\nclass {$class}\n{\n\n}";

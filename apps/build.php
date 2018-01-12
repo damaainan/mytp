@@ -24,12 +24,20 @@ return [
     // ],
 
     // 其他更多的模块定义
-    'api'     => [
+    // 'api'     => [
+    //     '__file__'   => ['common.php','tags.php'],
+    //     '__dir__'    => ['behavior', 'controller', 'service', 'model', 'view'],
+    //     'controller' => ['Index', 'Test', 'UserType'],
+    //     'service'    => ['Index', 'Test', 'UserType'],
+    //     'model'      => ['User', 'UserType'],
+    //     // 'view'       => ['index/index'],
+    // ],
+    'admin'     => [
         '__file__'   => ['common.php','tags.php'],
-        '__dir__'    => ['behavior', 'controller', 'service', 'model', 'view'],
-        'controller' => ['Index', 'Test', 'UserType'],
-        'service'    => ['Index', 'Test', 'UserType'],
-        'model'      => ['User', 'UserType'],
-        // 'view'       => ['index/index'],
+        '__dir__'    => ['behavior', 'controller/Game', 'service/Game', 'model/Game', 'view'],
+        'controller' => ['Index', 'Test', 'Game/Game'],
+        'service'    => ['Index', 'Test', 'Game/Game'],
+        'model'      => ['User', 'Game/Game'],
+        'view'       => ['index/index', 'User/user'],
     ],
 ];
