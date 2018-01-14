@@ -1,0 +1,1 @@
+php think migrate:run 创建表

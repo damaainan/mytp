@@ -4,5 +4,8 @@
         "psr-4": {
             "app\\": "apps"
         }
+    },
+    "require": {
+        "topthink/think-migration": "^2.0"
     }
 }
