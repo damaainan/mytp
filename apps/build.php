@@ -24,20 +24,20 @@ return [
     // ],
 
     // 其他更多的模块定义
-    // 'api'     => [
-    //     '__file__'   => ['common.php','tags.php'],
-    //     '__dir__'    => ['behavior', 'controller', 'service', 'model', 'view'],
-    //     'controller' => ['Index', 'Test', 'UserType'],
-    //     'service'    => ['Index', 'Test', 'UserType'],
-    //     'model'      => ['User', 'UserType'],
-    //     // 'view'       => ['index/index'],
-    // ],
+    'api'     => [
+        '__file__'   => ['common.php','tags.php'],
+        '__dir__'    => ['behavior', 'controller', 'service', 'model', 'view'],
+        'controller' => ['IndexController', 'TestController', 'UserTypeController'],
+        'service'    => ['IndexService', 'TestService', 'UserTypeService'],
+        'model'      => ['UserModel', 'UserTypeModel'],
+        // 'view'       => ['index/index'],
+    ],
     'admin'     => [
         '__file__'   => ['common.php','tags.php'],
         '__dir__'    => ['behavior', 'controller/Game', 'service/Game', 'model/Game', 'view'],
-        'controller' => ['Index', 'Test', 'Game/Game'],
-        'service'    => ['Index', 'Test', 'Game/Game'],
-        'model'      => ['User', 'Game/Game'],
+        'controller' => ['IndexController', 'TestController', 'Game/GameController'],
+        'service'    => ['IndexService', 'TestService', 'Game/GameService'],
+        'model'      => ['UserModel', 'Game/GameModel'],
         'view'       => ['index/index', 'User/user'],
     ],
 ];

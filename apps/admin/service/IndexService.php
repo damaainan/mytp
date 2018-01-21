@@ -1,7 +1,7 @@
 <?php
 namespace app\admin\service;
 
-class Test
+class IndexService
 {
 
 }

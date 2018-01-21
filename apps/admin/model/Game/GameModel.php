@@ -3,7 +3,7 @@ namespace app\admin\model\Game;
 
 use think\Model;
 
-class Game extends Model
+class GameModel extends Model
 {
 
 }

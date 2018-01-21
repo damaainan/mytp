@@ -1,7 +1,7 @@
 <?php
 namespace app\api\controller;
 
-class Test
+class IndexController
 {
 
 }

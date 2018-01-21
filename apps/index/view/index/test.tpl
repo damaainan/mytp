@@ -5,7 +5,7 @@
 {block name="content"}
 <h2>测试内容</h2>
 
-<div class="container">
+
   <!-- Content here -->
 <table class="table table-dark">
   <thead>
@@ -37,8 +37,6 @@
     </tr>
   </tbody>
 </table>
-</div>
-
 
 
 {/block}

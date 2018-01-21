@@ -47,10 +47,10 @@ return [
     'default_filter'         => '',
     // 默认语言
     'default_lang'           => 'zh-cn',
-    // 应用类库后缀
-    'class_suffix'           => false,
-    // 控制器类后缀
-    'controller_suffix'      => false,
+    // 应用类库后缀  添加 Model Service 后缀
+    'class_suffix'           => true,
+    // 控制器类后缀  添加 Controller 后缀
+    'controller_suffix'      => true,
 
     // 默认模块名
     'default_module'         => 'index',

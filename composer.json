@@ -6,6 +6,7 @@
         }
     },
     "require": {
-        "topthink/think-migration": "^2.0"
+        "topthink/think-migration": "^2.0",
+        "fzaninotto/faker": "^1.7"
     }
 }

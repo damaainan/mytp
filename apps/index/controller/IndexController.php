@@ -1,7 +1,7 @@
 <?php
 namespace app\index\controller;
 use think\Controller;
-class Index extends Controller
+class IndexController extends Controller
 {
     public function index()
     {
@@ -18,5 +18,27 @@ class Index extends Controller
     public function test(){
         echo "Test";
         return $this->fetch();
+    }
+
+    // index.php/index/Index/example/name/grid
+    public function example($name = 'table'){
+        switch ($name) {
+            case 'table':
+                return $this->fetch('include/table');
+                break;
+            case 'form':
+                return $this->fetch('include/form');
+                break;
+            case 'page':
+                return $this->fetch('include/page');
+                break;
+            case 'grid':
+                return $this->fetch('include/grid');
+                break;
+            
+            default:
+                return $this->fetch('include/table');
+                break;
+        }
     }
 }

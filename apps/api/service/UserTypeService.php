@@ -1,7 +1,7 @@
 <?php
 namespace app\api\service;
 
-class UserType
+class UserTypeService
 {
 
 }
