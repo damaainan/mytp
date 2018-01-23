@@ -16,15 +16,17 @@ class UserSeeder extends AbstractSeed
      */
     public function run()
     {
-        $faker = Faker\Factory::create();
+        $faker = Faker\Factory::create('zh_CN');
         $data = [];
         for ($i = 0; $i < 10; $i++) { // faker 的使用
+            $ip = $faker->ipv4;
+            $ipnum = sprintf('%u',ip2long($ip));
             $data[] = [
-                'username'      => $faker->userName,
-                'password'      => sha1($faker->password),
-                'login_status' => sha1('foo'),
-                'login_code'         => $faker->email,
-                'last_login_ip'    => $faker->firstName,
+                'username'      => $faker->name,
+                'password'      => md5($faker->password),
+                'login_status' => array_rand([0,1]),
+                'login_code'         => md5($faker->email),
+                'last_login_ip'    => $ipnum,
                 'last_login_time'     => date('Y-m-d H:i:s'),
                 'is_delete'       => array_rand([0,1])
             ];
