@@ -18,26 +18,28 @@ return [
     // 'index'     => [
     //     '__file__'   => ['common.php','tags.php'],
     //     '__dir__'    => ['behavior', 'controller', 'model', 'view'],
+    //     '__dir__'    => ['service'],
     //     'controller' => ['Index', 'Test', 'UserType'],
+    //     'service' => ['IndexService', 'TestService', 'UserTypeService'],
     //     'model'      => ['User', 'UserType'],
     //     'view'       => ['index/index'],
     // ],
 
     // 其他更多的模块定义
-    'api'     => [
-        '__file__'   => ['common.php','tags.php'],
-        '__dir__'    => ['behavior', 'controller', 'service', 'model', 'view'],
-        'controller' => ['IndexController', 'TestController', 'UserTypeController'],
-        'service'    => ['IndexService', 'TestService', 'UserTypeService'],
-        'model'      => ['UserModel', 'UserTypeModel'],
-        // 'view'       => ['index/index'],
-    ],
-    'admin'     => [
-        '__file__'   => ['common.php','tags.php'],
-        '__dir__'    => ['behavior', 'controller/Game', 'service/Game', 'model/Game', 'view'],
-        'controller' => ['IndexController', 'TestController', 'Game/GameController'],
-        'service'    => ['IndexService', 'TestService', 'Game/GameService'],
-        'model'      => ['UserModel', 'Game/GameModel'],
-        'view'       => ['index/index', 'User/user'],
-    ],
+    // 'api'     => [
+    //     '__file__'   => ['common.php','tags.php'],
+    //     '__dir__'    => ['behavior', 'controller', 'service', 'model', 'view'],
+    //     'controller' => ['IndexController', 'TestController', 'UserTypeController'],
+    //     'service'    => ['IndexService', 'TestService', 'UserTypeService'],
+    //     'model'      => ['UserModel', 'UserTypeModel'],
+    //     // 'view'       => ['index/index'],
+    // ],
+    // 'admin'     => [
+    //     '__file__'   => ['common.php','tags.php'],
+    //     '__dir__'    => ['behavior', 'controller/Game', 'service/Game', 'model/Game', 'view'],
+    //     'controller' => ['IndexController', 'TestController', 'Game/GameController'],
+    //     'service'    => ['IndexService', 'TestService', 'Game/GameService'],
+    //     'model'      => ['UserModel', 'Game/GameModel'],
+    //     'view'       => ['index/index', 'User/user'],
+    // ],
 ];
