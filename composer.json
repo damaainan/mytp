@@ -2,11 +2,14 @@
     
     "autoload": {
         "psr-4": {
-            "app\\": "apps"
+            "app\\": "apps",
+            "Test\\": "tests"
         }
     },
     "require": {
+        "topthink/framework": "5.1.2",
         "topthink/think-migration": "^2.0",
-        "fzaninotto/faker": "^1.7"
+        "fzaninotto/faker": "^1.7",
+        "phpunit/phpunit": "6.5"
     }
 }
